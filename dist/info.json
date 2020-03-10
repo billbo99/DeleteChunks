@@ -1,0 +1,13 @@
+{
+    "name": "DeleteChunks",
+    "version": "0.0.1",
+    "title": "DeleteChunks",
+    "author": "billbo99",
+    "contact": "",
+    "homepage": "https://mods.factorio.com/mod/DeleteChunks",
+    "factorio_version": "0.18",
+    "dependencies": [
+        "base"
+    ],
+    "description": "Using a selection tool allow Admin's to delete chunks"
+}
