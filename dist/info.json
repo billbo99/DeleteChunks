@@ -1,11 +1,11 @@
 {
     "name": "DeleteChunks",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "title": "DeleteChunks",
     "author": "billbo99",
     "contact": "",
     "homepage": "https://mods.factorio.com/mod/DeleteChunks",
-    "factorio_version": "0.18",
+    "factorio_version": "1.0",
     "dependencies": [
         "base"
     ],

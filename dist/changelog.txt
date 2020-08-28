@@ -1,8 +1,16 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.1
-Date: 2020-03-10
-  Features: First release
+Version: 1.0.0
+Date: 2020-08-28
+  Features:
   Changes:
-  Bug fixes:
+    - Moved to shortcut toolbar
+  Bugfixes:
   Info:
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2020-03-10
+  Features:
+    - First release
+  Changes:
+  Bugfixes:
+  Info:
