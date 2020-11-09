@@ -25,18 +25,15 @@ end
 
 local function on_player_selected_area(event, destroy_all)
     local player = game.players[event.player_index]
-
-    if not player.admin then
-        player.print("You are not an admin so this tool will do nothing for you")
-        return
-    end
-
     local surface = event.surface or player.surface
     local area = event.area
     local item = event.item
 
     if item == "chunk-eraser" then
-        -- area = {left_top={x1, y1}, right_bottom={x2, y2}}
+        if not player.admin then
+            player.print("You are not an admin so this tool will do nothing for you")
+            return
+        end
 
         for x = area.left_top.x, area.right_bottom.x, 32 do
             for y = area.left_top.y, area.right_bottom.y, 32 do
