@@ -3,10 +3,10 @@ local function delete_chunk(surface, chunk, destroy_all)
         return
     end
 
-    local area = {top_left = {chunk.x * 32, chunk.x * 32}, bottom_right = {(chunk.x * 32) + 32, (chunk.x * 32) + 32}}
+    local area = { top_left = { chunk.x * 32, chunk.y * 32 }, bottom_right = { (chunk.x * 32) + 32, (chunk.y * 32) + 32 } }
 
-    local entities_in_chunk = surface.find_entities_filtered {area = area, force = "player"}
-    local players_in_chunk = surface.find_entities_filtered {area = area, force = "player", type = "character"}
+    local entities_in_chunk = surface.find_entities_filtered { area = area, force = "player" }
+    local players_in_chunk = surface.find_entities_filtered { area = area, force = "player", type = "character" }
 
     if destroy_all then
         if players_in_chunk and #players_in_chunk > 0 then
